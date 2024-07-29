@@ -3,32 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>MiniApp</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="nav__content">
-          <p class="user__name">Lisa</p>
+    <div class="container">
+      <div class="profile">
+        <img src="avatar_url" alt="Avatar" class="avatar" />
+        <h1 id="username">
+          John Doe
           <img
+            id="premium-icon"
             src="https://t4.ftcdn.net/jpg/05/33/75/35/360_F_533753588_1krxEE0SDZWl0ZKd9cUzCL6HaTRo9UxK.jpg"
-            alt=""
-            class="premium"
+            alt="Premium"
           />
-        </div>
-        <img
-          src="https://avatars.mds.yandex.net/get-kino-vod-films-gallery/34144/d0006f191f2f56463930c98b56d51f55/380x240"
-          class="avatar"
-          alt=""
-        />
-      </nav>
-    </header>
-
-    <main>
-      <button>Пригласить друга</button>
-    </main>
-
+        </h1>
+        <p>Coins: <span id="coins">0</span></p>
+        <button id="invite-btn">Invite a Friend</button>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
